@@ -1,1 +1,38 @@
-
+{
+	"name": "SnapWikiSkin",
+	"author": "GrahamSH",
+	"url": "https://github.com/snapwiki/SnapWikiSkin",
+	"descriptionmsg": "snapwikiskin-desc",
+	"namemsg": "skinname-snapwikiskin",
+	"license-name": "MIT",
+	"type": "skin",
+	"ValidSkinNames": {
+		"snapwikiskin": "SnapWikiSkin"
+	},
+	"AutoloadClasses": {
+		"SkinScratchWikiSkin": "SnapWikiSkin.skin.php",
+		"SnapWikiSkinTemplate": "SnapWikiSkinTemplate.php"
+	},
+	"Hooks": {
+		"GetPreferences": "SkinScratchWikiSkin::onGetPreferences"
+	},
+	"MessagesDirs": {
+		"SnapWikiSkin": "i18n"
+	},
+	"ResourceModules": {
+		"skins.snapwikiskin2": {
+			"class": "ResourceLoaderSkinModule",
+			"position": "top",
+			"styles": {
+				"resources/main.css": {
+					"media": "screen"
+				}
+			}
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "SnapWikiSkin"
+	},
+	"manifest_version": 1
+}
