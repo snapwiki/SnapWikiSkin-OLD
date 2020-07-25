@@ -22,57 +22,75 @@ class ScratchWikiSkinTemplate extends BaseTemplate {
 	background-color: <?=htmlspecialchars(str_replace([';', '}'], '', $wgUser->getOption( 'scratchwikiskin-header-color' )))?>;
 }
 </style>
-<div id="navigation" role="banner">
-	<div class="inner">
-		<ul>
-			<li class="sidebar-toggle"><a></a></li>
-			<li class="logo"><a aria-label="Scratch" href="https://scratch.mit.edu/"></a></li>
-			<li class="link create">
-				<a class="dropdown-toggle"><span><?=wfMessage('scratchwikiskin-create')->inLanguage( $wgLang )->escaped()?></span></a>
-				<ul class="dropdown">
-					<li><a href="https://scratch.mit.edu/projects/editor/"><span><?=wfMessage( 'scratchwikiskin-create-project' )->inLanguage( $wgLang )->escaped() ?></span></a></li>
-					<li><a href="<?=Title::newFromText(wfMessage('scratchwikiskin-create-page-url')->inContentLanguage()->text())->getLocalURL()?>"><span><?=wfMessage('scratchwikiskin-create-page')->inLanguage( $wgLang )->escaped()?></span></a></li>
-				</ul>
-			</li>
-			<li class="link explore">
-				<a class="dropdown-toggle"><span><?=wfMessage('scratchwikiskin-explore')->inLanguage( $wgLang )->escaped()?></span></a>
-				<ul class="dropdown">
-					<li><a href="https://scratch.mit.edu/explore/projects/all"><span><?=wfMessage( 'scratchwikiskin-explore-projects' )->inLanguage( $wgLang )->escaped() ?></span></a></li>
-					<li><a href="<?=Title::newFromText(wfMessage('randompage-url')->inContentLanguage()->text())->getLocalURL()?>"><span><?=wfMessage('randompage')->inLanguage( $wgLang )->escaped()?></span></a></li>
-				</ul>
-			</li>
-			<li class="link discuss">
-				<a class="dropdown-toggle"><span><?=wfMessage('scratchwikiskin-discuss')->inLanguage( $wgLang )->escaped()?></span></a>
-				<ul class="dropdown">
-					<li><a href="https://scratch.mit.edu/discuss"><span><?=wfMessage( 'scratchwikiskin-discuss-text' )->inLanguage( $wgLang )->escaped() ?></span></a></li>
-					<li><a href="<?=wfMessage('scratchwikiskin-discuss-wiki')->inLanguage( $wgLang )->escaped()?>"><span><?=wfMessage('scratchwikiskin-discuss-wiki-text')->inLanguage( $wgLang )->escaped()?></span></a></li>
-					<li><a href="<?=Title::newFromText(wfMessage('portal-url')->inContentLanguage()->text())->getLocalURL()?>"><span><?=wfMessage('portal')->inLanguage( $wgLang )->escaped()?></span></a></li>
-				</ul>
-			</li>
-			<li class="link tips">
-				<a class="dropdown-toggle"><span><?=wfMessage('scratchwikiskin-ideas')->inLanguage( $wgLang )->escaped()?></span></a>
-				<ul class="dropdown">
-					<li><a href="https://scratch.mit.edu/ideas"><span><?=wfMessage( 'scratchwikiskin-ideas-text' )->inLanguage( $wgLang )->escaped() ?></span></a></li>
-					<li><a href="<?=Title::newFromText(wfMessage('scratchwikiskin-faq-page-url')->inContentLanguage()->text())->getLocalURL()?>"><span><?=wfMessage('scratchwikiskin-faq-page')->inLanguage( $wgLang )->escaped()?></span></a></li>
-				</ul>
-			</li>
-			<li class="link about">
-				<a class="dropdown-toggle"><span><?=wfMessage('scratchwikiskin-about')->inLanguage( $wgLang )->escaped()?></span></a>
-				<ul class="dropdown">
-					<li><a href="https://scratch.mit.edu/about"><span><?=wfMessage( 'scratchwikiskin-about-text' )->inLanguage( $wgLang )->escaped() ?></span></a></li>
-					<li><a href="<?=Title::newFromText(wfMessage('aboutpage')->inContentLanguage()->text())->getLocalURL()?>"><span><?=wfMessage('aboutsite')->inLanguage( $wgLang )->escaped()?></span></a></li>
-				</ul>
-			</li>
-			<li class="search">
-				<form class="form" action="<?php $this->text( 'wgScript' ) ?>" role="search" aria-label="<?=wfMessage( 'scratchwikiskin-search' )->inLanguage( $wgLang )->escaped()?>">
-					<button class="button btn-search"></button>
-					<div class="form-group row no-label">
-						<div class="col-sm-9">
-							<input type="text" class="input" id="searchInput" accesskey="<?=wfMessage( 'accesskey-search' )->inLanguage( $wgLang )->text() ?>" title="Search Scratch Wiki [alt-shift-<?=wfMessage( 'accesskey-search' )->inLanguage( $wgLang )->text()?>]" name="search" autocomplete="off" placeholder="<?=wfMessage( 'scratchwikiskin-search' )->inLanguage( $wgLang )->escaped() ?>" />
-							<input type="hidden" value="Special:Search" name="title" />
-							<span class="help-block">Not Required</span>
-						</div>
-					</div>
+<div class="pure-menu-horizontal pure-menu">
+        <ul class="pure-g pure-menu-list">
+            <a class="pure-u-1-12" href="/" aria-label="Snap! home page">
+                <img src="img/topbar-logo.png" class="logo clickable">
+            </a>
+            <span class="pure-u-5-12">
+                <li class="pure-menu-item">
+                    <a localizable="" class="pure-menu-link run" target="_blank" href="https://snap.berkeley.edu/snap/snap.html">Run Snap<em>!</em></a>
+                </li>
+                <li class="pure-menu-item">
+                    <a localizable="" class="pure-menu-link explore" href="explore">Explore</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a localizable="" class="pure-menu-link forum" href="https://forum.snap.berkeley.edu/">Forum</a>
+                </li>
+                <li class="pure-menu-item">
+                    <a localizable="" class="pure-menu-link" target="_blank" href="https://www.snapcon.org">Snap<em>!</em>Con</a>
+                </li>
+            </span>
+            <i class="pure-u-1-24"></i>
+            <div class="search pure-u-1-6">
+                <form action="search">
+                    <input type="text" name="query">
+                    <i class="fas fa-search"></i>
+                </form>
+            </div>
+            <i class="pure-u-1-24"></i>
+            <li hidden="" class="join pure-menu-item pure-u-1-12">
+                <a localizable="" class="pure-menu-link" href="sign_up">Join</a></li>
+            <li hidden="" class="sign-in pure-menu-item pure-u-1-12">
+                <a localizable="" class="pure-menu-link" href="login">Log In</a></li>
+            <li class="pure-menu-item pure-u-1-6
+                pure-menu-has-children pure-menu-allow-hover user-menu">
+                <a id="menuLink1" class="pure-menu-link visitor clickable">grahamsh</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a localizable="" class="pure-menu-link my-projects" href="my_projects">My Projects</a></li>
+                    <li class="pure-menu-item">
+                        <a localizable="" class="pure-menu-link my-collections" href="my_collections">My Collections</a></li>
+                    <li class="pure-menu-item">
+                        <a localizable="" class="pure-menu-link my-public-projects" href="user?user=grahamsh">My Public Page</a></li>
+                    <li class="pure-menu-item">
+                        <a localizable="" class="pure-menu-link my-profile" href="profile">My Profile</a></li>
+                    <li hidden="true" class="pure-menu-item admin">
+                        <a localizable="" class="pure-menu-link" href="admin">Administration</a></li>
+                    <hr>
+                    <li class="pure-menu-item">
+                        <a localizable="" class="pure-menu-link clickable" href="javascript:SnapCloud.logout(function () {
+                                sessionStorage.clear();
+                                location.href = 'index';
+                            });">Log Out</a></li>
+                </ul>
+            </li>
+            <li class="pure-menu-item pure-u-1-24 pure-menu-has-children
+                pure-menu-allow-hover language-select">
+                <a class="pure-menu-link clickable">
+                    <i class="fas fa-globe"></i>
+                </a>
+                <ul class="pure-menu-children languages">
+                    <a class="pure-menu-link clickable" onclick="localizer.setLanguage('es');">Castellano</a>
+                    <a class="pure-menu-link clickable" onclick="localizer.setLanguage('ca');">Català</a>
+                    <a class="pure-menu-link clickable" onclick="localizer.setLanguage('zh');">简体中文</a>
+                    <a class="pure-menu-link clickable" onclick="localizer.setLanguage('de');">Deutsch</a>
+                    <a class="pure-menu-link clickable" onclick="localizer.setLanguage('en');">English</a>
+                    <a class="pure-menu-link clickable" onclick="localizer.setLanguage('pt');">Português</a>
+                </ul>
+            </li>
+        </ul>
+    </div>
 				</form>
 			</li>
 			<li class="link right content-actions">
