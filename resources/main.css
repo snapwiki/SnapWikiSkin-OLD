@@ -1,7 +1,11 @@
 .inner {
     margin: 0 auto;
 }
-
+#top-nav {
+background: #2d3142;
+    height: 48px;
+    color: #ffffff;
+}
 /* Fonts */
 
 @font-face {
