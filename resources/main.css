@@ -219,29 +219,7 @@
 .pure-u-1, .pure-u-1-1, .pure-u-5-5, .pure-u-24-24 {
     width: 100%}
 
-element.style {
-}
-@media only screen and (max-width: 1080px)
-#top-bar .pure-menu ul.pure-menu-list {
-    width: auto;
-}
-#top-bar .pure-menu ul.pure-menu-list {
-    display: block;
-    font-size: 14px;
-    line-height: 48px;
-    height: 48px;
-    width: 1080px;
-    margin: 0 auto;
-}
-.pure-menu-horizontal {
-    width: 100%;
-    white-space: nowrap;
-}
-.pure-menu {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
 /* Fonts */
 
 @font-face {
