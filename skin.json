@@ -1,6 +1,6 @@
 {
 	"name": "SnapWikiSkin",
-	"author": "GrahamSH",
+	"author": "GrahamSH","Authors of Scratchwikiskin"
 	"url": "https://github.com/snapwiki/SnapWikiSkin",
 	"descriptionmsg": "snapwikiskin-desc",
 	"namemsg": "skinname-snapwikiskin",
@@ -10,7 +10,7 @@
 		"snapwikiskin": "SnapWikiSkin"
 	},
 	"AutoloadClasses": {
-		"SkinScratchWikiSkin": "SnapWikiSkin.skin.php",
+		"SkinSnapWikiSkin": "SnapWikiSkin.skin.php",
 		"SnapWikiSkinTemplate": "SnapWikiSkinTemplate.php"
 	},
 	"Hooks": {
@@ -20,7 +20,7 @@
 		"SnapWikiSkin": "i18n"
 	},
 	"ResourceModules": {
-		"skins.snapwikiskin2": {
+		"skins.snapwikiskin": {
 			"class": "ResourceLoaderSkinModule",
 			"position": "top",
 			"styles": {
