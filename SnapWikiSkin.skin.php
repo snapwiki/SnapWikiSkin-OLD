@@ -44,9 +44,9 @@ class HTMLColorField extends HTMLFormField {
 	}
 }
 
-class SkinScratchWikiSkin extends SkinTemplate {
-	var $skinname = 'scratchwikiskin2', $stylename = 'ScratchWikiSkin',
-		$template = 'ScratchWikiSkinTemplate', $useHeadElement = true;
+class SkinSnapWikiSkin extends SkinTemplate {
+	var $skinname = 'SnapWikiSkin', $stylename = 'SnapWikiSkin',
+		$template = 'SnapWikiSkinTemplate', $useHeadElement = true;
 
 	/**
 	 * Add CSS via ResourceLoader
@@ -56,7 +56,7 @@ class SkinScratchWikiSkin extends SkinTemplate {
 	public function setupSkinUserCss( OutputPage $out ) {
 		parent::setupSkinUserCss( $out );
 		$out->addModuleStyles( [
-			'mediawiki.skinning.interface', 'skins.scratchwikiskin2'
+			'mediawiki.skinning.interface', 'skins.snapwikiskin2'
 		] );
 		// make Chrome mobile testing work
 		$out->addMeta('viewport', 'user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height');
@@ -64,11 +64,11 @@ class SkinScratchWikiSkin extends SkinTemplate {
 
 	static function onGetPreferences( $user, &$preferences ) {
 		HTMLForm::$typeMappings['color'] = HTMLColorField::class;
-		$origpref = $user->getOption( 'scratchwikiskin-header-color' );
-		$preferences['scratchwikiskin-header-color'] = [
+		$origpref = $user->getOption( 'snapwikiskin-header-color' );
+		$preferences['snapwikiskin-header-color'] = [
 			'type' => 'color',
 			'pattern' => '#[0-9A-Za-z]{6}',
-			'label-message' => 'scratchwikiskin-pref-color',
+			'label-message' => 'snapwikiskin-pref-color',
 			'section' => 'rendering/skin',
 			'default' => ($origpref ? $origpref : '#7953c4'),
 		];
