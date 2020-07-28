@@ -28,7 +28,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate {
                 <img src="img/topbar-logo.png" class="logo clickable">
             </a>
             <span class="pure-u-5-12">
-                <li class="pure-menu-item">
+                <li class="https://snap.berkeley.edu/pure-menu-item">
                     <a localizable="" class="pure-menu-link run" target="_blank" href="https://snap.berkeley.edu/snap/snap.html">Run Snap<em>!</em></a>
                 </li>
                 <li class="pure-menu-item">
