@@ -11,4 +11,3 @@ wfLoadSkin( 'SnapWikiSkin' );
 ```
 $wgDefaultSkin = 'SnapWikiSkin';
 ```
-Please do not use without permission.
