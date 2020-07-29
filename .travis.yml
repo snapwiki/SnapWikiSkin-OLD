@@ -1,5 +1,25 @@
 language: php
-os: #OS name
-allow_failures: #OS in which build failures are allowed
-install: #What to install
-#Please read this for information on how to prepare this file- https://docs.travis-ci.com/user/languages/php/ . Thank you.
+
+php:
+  - 7.2
+  - 7.1
+  - 7.0
+  - 5.6
+  - hhvm
+  - nightly
+
+matrix:
+  fast_finish: true
+  allow_failures:
+  - php: hhvm
+  - php: nightly
+
+sudo: false
+
+install:
+  - travis_retry composer update --no-progress --prefer-dist --profile
+
+script:
+  - composer test
+
+  
