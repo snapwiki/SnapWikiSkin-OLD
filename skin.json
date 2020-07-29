@@ -1,7 +1,7 @@
 {
 	"name": "SnapWikiSkin",
-	"author": "GrahamSH","Authors of Scratchwikiskin"
-	"url": "https://github.com/snapwiki/SnapWikiSkin",
+	"author": "GrahamSH"
+	"url": "https://github.com/snapwiki/SnapWikiSkin.git",
 	"descriptionmsg": "snapwikiskin-desc",
 	"namemsg": "skinname-snapwikiskin",
 	"license-name": "MIT",
