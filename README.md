@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.com/snapwiki/SnapWikiSkin.svg?branch=master)](https://travis-ci.com/snapwiki/SnapWikiSkin)
 # Snapwikiskin
-This is a skin (STILL WIP) for the Snap! Wiki
+This is a skin (STILL WIP) for the Snap! Wiki.
 
 ## Installation
 1. Download the contents of this repository and save them into $wgScriptPath/skins/SnapWikiSkin (a new directory)
