@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.com/snapwiki/SnapWikiSkin.svg?branch=master)](https://travis-ci.com/snapwiki/SnapWikiSkin)
 # Snapwikiskin
 This is a skin (STILL WIP) for the Snap! Wiki
 
