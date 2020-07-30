@@ -38,7 +38,7 @@ class ScratchWikiSkinTemplate extends BaseTemplate {
                     <a localizable="" class="pure-menu-link forum" href="https://forum.snap.berkeley.edu/">Forum</a>
                 </li>
                 <li class="pure-menu-item">
-                    <a localizable="" class="pure-menu-link" target="_blank" href="https://www.snapcon.org">Snap<em>!</em>Con</a>
+                    <a localizable="" class="pure-menu-link" target="_blank" href="https://www.snapcon.org">Snap<i>!</i>Con</a>
                 </li>
             </span>
             <i class="pure-u-1-24"></i>
@@ -200,7 +200,6 @@ if (!$wgUser->isLoggedIn()) { ?>
             <p><a localizable="" href="https://snap.berkeley.edu/examples">Examples</a></p>
             <p><a localizable="" href="https://snap.berkeley.edu/snapsource/help/SnapManual.pdf">Reference Manual</a></p>
             <p><a localizable="" href="https://snap.berkeley.edu/materials">Materials</a></p>
-            <p><a localizable="" href="https://snap.berkeley.edu/bjc">The Beauty and Joy of Computing</a></p>
             <p><a localizable="" href="https://snap.berkeley.edu/research">Research</a></p>
         </div>
         <div class="pure-u-1-5">
