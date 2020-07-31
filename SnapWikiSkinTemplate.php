@@ -6,7 +6,7 @@
  * @ingroup Skins
  */
 
-class ScratchWikiSkinTemplate extends BaseTemplate {
+class SnapWikiSkinTemplate extends BaseTemplate {
 	public function execute() {
 		global $wgRequest, $wgStylePath, $wgUser, $wgLogo, $wgRightsPage, $wgRightsUrl, $wgRightsIcon, $wgRightsText, $wgLang;
 		$skin = $this->data['skin'];
@@ -65,8 +65,6 @@ class ScratchWikiSkinTemplate extends BaseTemplate {
                         <a localizable="" class="pure-menu-link my-public-projects" href="user?user=grahamsh">My Public Page</a></li>
                     <li class="pure-menu-item">
                         <a localizable="" class="pure-menu-link my-profile" href="profile">My Profile</a></li>
-                    <li hidden="true" class="pure-menu-item admin">
-                        <a localizable="" class="pure-menu-link" href="admin">Administration</a></li>
                     <hr>
                     <li class="pure-menu-item">
                         <a localizable="" class="pure-menu-link clickable" href="javascript:SnapCloud.logout(function () {
