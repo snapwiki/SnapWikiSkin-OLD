@@ -1,5 +1,4 @@
 [![Build Status](https://travis-ci.com/snapwiki/SnapWikiSkin.svg?branch=master)](https://travis-ci.com/snapwiki/SnapWikiSkin)
-[![gitlocalized ](https://gitlocalize.com/repo/5132/whole_project/badge.svg)](https://gitlocalize.com/repo/5132/whole_project?utm_source=badge)
 # Snapwikiskin
 This is a skin (STILL WIP) for the Snap! Wiki.
 
