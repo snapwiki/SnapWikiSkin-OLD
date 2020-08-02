@@ -939,7 +939,7 @@ dl dt {
 .box {
     display: inline-block;
     border: 1px solid #d9d9d9;
-    border-radius: 10px 10px 0 0;
+    border-radius: 5px 5px 0 0;
     background-color: #fff;
     width: 100%;
 }
@@ -957,7 +957,7 @@ dl dt {
     border-top: 1px solid #fff;
     border-bottom: 1px solid #d9d9d9;
     border-radius: 10px 10px 0 0;
-    background-color: #f2f2f2;
+    background-color: #fff;
     padding: 8px 20px;
     overflow: hidden;
 }
