@@ -13,3 +13,6 @@ wfLoadSkin( 'SnapWikiSkin' );
 ```php
 $wgDefaultSkin = 'SnapWikiSkin';
 ```
+## Contributors
+THANK YOU TO EVERYONE WHO CONTRIBUTED AT THE SCRATCHWIKISKIN2!
+GrahamSH and _ also helped a ton.
