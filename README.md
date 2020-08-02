@@ -15,4 +15,4 @@ $wgDefaultSkin = 'SnapWikiSkin';
 ```
 ## Contributors
 Thank You To Everyone Who Contributed At The Scratchwikiskin2!
-GrahamSH and R4356th also helped a ton.
+R4356th also helped.
