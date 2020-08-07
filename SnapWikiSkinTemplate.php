@@ -112,7 +112,7 @@ if (!$wgUser->isLoggedIn()) { ?>
 						<p><a href="<?php echo Title::newFromText(wfMessage( 'snapwikiskin-becomeacontributor-page' )->inContentLanguage()->text())->getLocalURL();?>"><?=wfMessage( 'snapwikiskin-learnaboutjoining' )->inLanguage( $wgLang )->escaped()?></a></p>
 						<p><a href="<?php echo Title::newFromText(wfMessage( 'portal-url' )->inContentLanguage()->text())->getLocalURL();?>"><?=wfMessage( 'snapwikiskin-seeportal' )->inLanguage( $wgLang )->escaped()?></a></p>
 					</div>
-				</div>
+				</div> 
 <?php } ?>
 			</div>
 			<div class="right">
