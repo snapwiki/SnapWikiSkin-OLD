@@ -1,4 +1,5 @@
 [![Build Status](https://travis-ci.com/snapwiki/SnapWikiSkin.svg?branch=master)](https://travis-ci.com/snapwiki/SnapWikiSkin)
+[![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=snapwiki/SnapWikiSkin)](https://dependabot.com)
 # Snapwikiskin
 This is a skin (STILL WIP) for the Snap! Wiki.
 
