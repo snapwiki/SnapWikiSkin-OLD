@@ -4,7 +4,7 @@
 	"url": "https://github.com/snapwiki/SnapWikiSkin",
 	"descriptionmsg": "snapwikiskin-desc",
 	"namemsg": "skinname-snapwikiskin",
-	"license-name": "MIT",
+	"license-name": "GPL",
 	"type": "skin",
 	"ValidSkinNames": {
 		"snapwikiskin": "SnapWikiSkin"
