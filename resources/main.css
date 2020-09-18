@@ -65,7 +65,7 @@
 #top-bar .pure-menu-horizontal .pure-menu-children {
     width: auto;
     min-width: 100%;
-    background: #2d3142;
+    background-color: #2d3142;
 }
 
 #top-bar .pure-menu-children {
@@ -107,7 +107,7 @@
     width: 100%;
     border: 2px solid #ffffff;
     border-radius: 14px;
-    background: #ffffff;
+    background-color: #ffffff;
     color: #2d3142;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
